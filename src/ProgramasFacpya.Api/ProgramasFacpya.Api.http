@@ -1,0 +1,6 @@
+@ProgramasFacpya.Api_HostAddress = http://localhost:5049
+
+GET {{ProgramasFacpya.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
