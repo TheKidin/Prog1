@@ -102,7 +102,17 @@ public class AlumnoService (DbContext db, IValidator<AlumnoDTO> validator)
         return ApiResponse<string>.Ok("Alumno actualizado correctamente");
     }
 
+    public async Task<ApiResponse<string>>Eliminar(int idAlumno)
+    {
+        using var connection = _db.CreateConnection();
+        string SqlScript = @"DELETE FROM ALUMNO WHERE IdAlumno = @IdAlumno";
+        var rows = await connection.ExecuteAsync(SqlScript, new {IdAlumno = idAlumno});
 
+        if (rows == 0)
+        return ApiResponse<string>.Error("Alumno no encontrado");
+
+        return ApiResponse<string>.Ok("Alumno Eliminado");
+    }
 
 }
 

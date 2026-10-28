@@ -57,3 +57,48 @@ ALTER TABLE [dbo].[ALUMNO] ADD CONSTRAINT [PK_idAlumno_ALU] PRIMARY KEY CLUSTERE
 
  ALTER TABLE [dbo].[ALUMNO] CHECK CONSTRAINT [FK_idCarrera_ALU]
  GO
+
+
+
+ USE DBFACPYA
+GO
+
+INSERT INTO [dbo].[CARRERA] ([Descripcion])
+VALUES 
+    ('CP'),    -- Contador Público
+    ('LA'),    -- Licenciado en Administración
+    ('LTI'),   -- Licenciado en Tecnologías de Información
+    ('LNI')    -- Licenciado en Negocios Internacionales
+GO
+
+
+select * from [dbo].[CARRERA]
+
+
+
+CREATE TABLE [dbo].[Maestro](
+    [idMaestro] [int] IDENTITY(1000,1) NOT NULL,
+    [Nombre] [varchar](50) NOT NULL,
+    [APaterno] [varchar](50) NOT NULL,
+    [AMaterno] [varchar](50) NOT NULL,
+    [FecRegistro] [smalldatetime] NOT NULL,
+) ON [PRIMARY]
+
+
+
+USE DBFACPYA;
+GO
+
+CREATE TABLE [dbo].[Carrera](
+    [idCarrera] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    [Nombre] [varchar](100) NOT NULL,
+    [FecRegistro] [smalldatetime] NOT NULL
+) ON [PRIMARY]
+GO
+
+
+DELETE from [dbo].[Carrera]
+GO
+
+
+select * from [dbo].[Carrera]

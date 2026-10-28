@@ -28,4 +28,17 @@ public class AlumnoController(AlumnoService service) : ControllerBase
     {
         return Ok(await _service.Crear(dto));
     }
+
+    [HttpPut("Actualizar/{idAlumno}")]
+
+    public async Task<IActionResult>Actualizar (int idAlumno, [FromBody] AlumnoDTO dto)
+    {
+        return Ok(await _service.Actualizar(idAlumno, dto));
+    }
+
+    [HttpDelete("Eliminar/{idAlumno}")]
+    public async Task<IActionResult> Eliminar(int idAlumno)
+    {
+        return Ok(await _service.Eliminar(idAlumno));
+    }
 }
