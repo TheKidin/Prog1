@@ -1670,19 +1670,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Braulio\\.nuget\\packages\\": {}
+    "/home/kai/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Braulio\\Documents\\AplicacionesMoviles\\Programas\\Prog1\\src\\ProgramasFacpya.Api\\ProgramasFacpya.Api.csproj",
+      "projectUniqueName": "/home/kai/Documentos/AplicacionesMoviles/Prog1/src/ProgramasFacpya.Api/ProgramasFacpya.Api.csproj",
       "projectName": "ProgramasFacpya.Api",
-      "projectPath": "c:\\Users\\Braulio\\Documents\\AplicacionesMoviles\\Programas\\Prog1\\src\\ProgramasFacpya.Api\\ProgramasFacpya.Api.csproj",
-      "packagesPath": "C:\\Users\\Braulio\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Braulio\\Documents\\AplicacionesMoviles\\Programas\\Prog1\\src\\ProgramasFacpya.Api\\obj\\",
+      "projectPath": "/home/kai/Documentos/AplicacionesMoviles/Prog1/src/ProgramasFacpya.Api/ProgramasFacpya.Api.csproj",
+      "packagesPath": "/home/kai/.nuget/packages/",
+      "outputPath": "/home/kai/Documentos/AplicacionesMoviles/Prog1/src/ProgramasFacpya.Api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Braulio\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/kai/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -1752,7 +1752,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.316/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/kai/.dotnet/sdk/9.0.319/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
